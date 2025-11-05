@@ -1,1 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Problem-Solving — Restaurant Case Study</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Helen Onanusi</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="showcase.html">Business Showcase</a>
+        <a href="problem-solving.html" class="active">Problem-Solving</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main class="container reveal">
+    <h1>Restaurant Digital Transformation — CTO Case Study</h1>
+
+    <section class="case-intro">
+      <h2>Business context</h2>
+      <p>Local restaurant "The Urban Fork" needs a small web solution to: improve customer engagement, manage bookings & simple feedback, and integrate social media to grow presence.</p>
+
+      <div class="restaurant-card">
+        <div>
+          <h3>The Urban Fork</h3>
+          <p>123 Market Lane, Manchester · 0161 555 0123 · open 11:30–22:00</p>
+        </div>
+        <div class="social-links">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2>Customer booking / feedback form</h2>
+      <p>Users submit booking requests or feedback. The form will generate an email message (visible below) you can send via your default mail client. No database involved.</p>
+
+      <form id="bookingForm" class="form-grid" onsubmit="return false;" novalidate>
+        <label>
+          <span>Name</span>
+          <input type="text" id="name" name="name" required placeholder="Your full name">
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+        </label>
+
+        <label>
+          <span>Type</span>
+          <select id="type" name="type">
+            <option>Booking request</option>
+            <option>Feedback</option>
+            <option>General question</option>
+          </select>
+        </label>
+
+        <label class="full">
+          <span>Details</span>
+          <textarea id="details" name="details" rows="4" placeholder="Tell us your booking / feedback details"></textarea>
+        </label>
+
+        <div class="form-actions full">
+          <button id="previewBtn" class="btn">Preview email</button>
+          <button id="sendBtn" class="btn ghost" type="button">Open in Mail</button>
+        </div>
+
+        <div class="full">
+          <h3>Generated email preview</h3>
+          <pre id="emailPreview" class="email-preview">No preview yet — fill the form and click "Preview email".</pre>
+        </div>
+      </form>
+    </section>
+
+    <section class="design-explain">
+      <h2>Design explanation</h2>
+      <p>The page focuses on conversion: quick contact + clear call-to-action. Social links are included for continuity between the website and marketing channels. The form uses client-side validation and generates a <code>mailto:</code> link as a simple, testable mechanism for sending the captured info to restaurant staff.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year4"></span> Helen Onanusi</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
 
