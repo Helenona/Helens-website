@@ -1,36 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Helen Onanusi | Home</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Helen Onanusi — Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1 class="logo">Helen Onanusi</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Helen Onanusi</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="showcase.html">Business Showcase</a>
+        <a href="problem-solving.html">Problem-Solving</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Welcome!</h2>
-      <p>I'm Helen Onanusi — a creative thinker passionate about growth, design, and innovation.</p>
-      <a href="portfolio.html" class="btn">View My Work</a>
-    </div>
-  </section>
+  <main>
+    <section class="hero colorful-hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <h1>Hi — I’m Helen</h1>
+          <p class="lead">
+            A creative web developer and digital-business thinker focused on building thoughtful, accessible web experiences.
+            I blend design, code, and commercial insight to help small businesses (like local restaurants) transform digitally.
+          </p>
+          <p class="cta-row">
+            <a class="btn" href="showcase.html">See my work</a>
+            <a class="btn ghost" href="problem-solving.html">Restaurant case study</a>
+          </p>
+        </div>
 
-  <footer>
-    <p>© 2025 Helen Onanusi. All rights reserved.</p>
+        <div class="hero-card reveal">
+          <!-- animated SVG illustration -->
+          <svg class="hero-illustration" viewBox="0 0 200 200" aria-hidden="true">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop stop-color="#FF7A7A" offset="0"/>
+                <stop stop-color="#FFB66B" offset="1"/>
+              </linearGradient>
+            </defs>
+            <rect x="10" y="30" width="180" height="140" rx="14" fill="url(#g1)" class="svg-card" />
+            <g transform="translate(38,60)" class="plate">
+              <circle cx="32" cy="24" r="18" fill="#fff" opacity="0.85"/>
+              <rect x="8" y="8" width="48" height="8" rx="4" fill="#FFEFEB" />
+            </g>
+          </svg>
+          <p class="small-note">I design UI, build accessible frontends, and create small JS tools that solve business problems.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights container">
+      <div class="grid-3">
+        <article class="card reveal">
+          <h3>Digital Strategy</h3>
+          <p>Aligning website features to real business goals (bookings, reviews, marketing).</p>
+        </article>
+        <article class="card reveal">
+          <h3>Front-end Development</h3>
+          <p>Semantic HTML5, CSS3, and JavaScript — responsive, tested, and validated code.</p>
+        </article>
+        <article class="card reveal">
+          <h3>User Experience</h3>
+          <p>Simple, usable interfaces and accessible interactions for all users.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about container reveal">
+      <h2>Quick professional summary</h2>
+      <p>I’m a Level 5 web developer student focusing on web application development and digital business. I enjoy creating solutions for restaurants and small businesses — booking flows, customer feedback forms, and social media integrations that actually help grow revenue.</p>
+      <p>Goal: Deliver a polished, validated, and deployable prototype that demonstrates both programming skills and business understanding.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>© <span id="year"></span> Helen Onanusi — Web Prototype</p>
+      </div>
+      <div class="socials">
+        <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://twitter.com/" aria-label="Twitter" target="_blank" rel="noopener">X</a>
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
+
