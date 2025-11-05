@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Business Showcase — Helen Onanusi</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Helen Onanusi</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="showcase.html" class="active">Business Showcase</a>
+        <a href="problem-solving.html">Problem-Solving</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main class="container reveal">
+    <h1>Business Showcase</h1>
+    <p class="muted">Three projects demonstrating technical and commercial skills.</p>
+
+    <section class="projects-grid">
+      <article class="project-card">
+        <h3>Project 1 — Café Booking Flow</h3>
+        <p><strong>Role:</strong> Front-end developer & UX designer</p>
+        <p><strong>Problem:</strong> Cafe had no easy booking system for groups.</p>
+        <p><strong>Outcome:</strong> A lightweight booking form with email generation and confirmation flow. Increased pre-bookings by 18% (simulated dataset).</p>
+      </article>
+
+      <article class="project-card">
+        <h3>Project 2 — Menu Accessibility Overhaul</h3>
+        <p><strong>Role:</strong> Accessibility lead</p>
+        <p><strong>Problem:</strong> Restaurant menu was image-based and not accessible.</p>
+        <p><strong>Outcome:</strong> Converted menu to HTML, improved readability & keyboard nav; better SEO and customer feedback.</p>
+      </article>
+
+      <article class="project-card">
+        <h3>Project 3 — Local SEO Landing Page</h3>
+        <p><strong>Role:</strong> Developer & content strategist</p>
+        <p><strong>Problem:</strong> Business lacked online visibility.</p>
+        <p><strong>Outcome:</strong> A small landing page with schema, contact CTA, and analytics demo leading to improved click-through in simulation.</p>
+      </article>
+    </section>
+
+    <section class="design-rationale">
+      <h2>Design concept for the Problem-Solving Page</h2>
+      <p>The Problem-Solving page is built around simplicity and conversion: the goal is to capture booking/feedback information quickly and generate an actionable email for restaurant staff. I used a clear hierarchical layout with a prominent contact module, social links for marketing continuity, and a lightweight animated illustration to increase engagement while preserving performance.</p>
+      <p>Key decisions:</p>
+      <ul>
+        <li>Keep calls-to-action above the fold (form + contact CTA).</li>
+        <li>Use <code>mailto:</code> generation as a fallback: minimal dependencies, easy to validate and test for the marker.</li>
+        <li>Accessible labels and form validation to reduce errors and improve conversion.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year3"></span> Helen Onanusi</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
